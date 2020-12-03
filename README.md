@@ -19,7 +19,9 @@ Check out the live demo [here](https://youthful-neumann-3e52e4.netlify.app/).
     git@github.com:hemant-soni-vst-au4/weather-app.git
 ```
 - Enter the repo directory.
-- Run `npm install && npm run build` in your terminal.
+- Run `npm install` in your terminal.
+- go to `index.html` file in `dist` folder
+- run with live server
 
 ## Author
 
