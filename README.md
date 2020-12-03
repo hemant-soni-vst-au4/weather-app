@@ -16,7 +16,7 @@ Check out the live demo [here](https://youthful-neumann-3e52e4.netlify.app/).
 ### Install
 - Clone this repository in your terminal using **git clone** command.
 ```
-    git@github.com:hemant-soni-vst-au4/Restaurant.git
+    git@github.com:hemant-soni-vst-au4/weather-app.git
 ```
 - Enter the repo directory.
 - Run `npm install && npm run build` in your terminal.
