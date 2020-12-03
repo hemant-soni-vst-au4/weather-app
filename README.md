@@ -1,6 +1,6 @@
 # Weather App
 
-> An app that tells the weather. It comes equipped with an auto-complete search bar to find your city!
+> An app that tells the weather. It equipped with writting city name in search box and youcan see searched city's weather!
 
 ![image](./dist/static/live.png)
 
