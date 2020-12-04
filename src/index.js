@@ -114,8 +114,8 @@ function handleSubmit(e) {
   fetchWeather();
 }
 form.addEventListener('submit', handleSubmit);
-submitBtn.addEventListener('click', function(){
-   handleSubmit;
-   let n = Math.floor(Math.random() * 9)
-   document.querySelector('#main-container').style.backgroundImage = `url("https://picsum.photos/20${n}/300?random=2")`;
+submitBtn.addEventListener('click', () => {
+  handleSubmit; // eslint-disable-line
+  const n = Math.floor(Math.random() * 9);
+  document.querySelector('#main-container').style.backgroundImage = `url("https://picsum.photos/20${n}/300?random=2")`;
 });
