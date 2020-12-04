@@ -16,7 +16,6 @@ function throwErrorMsg() {
 }
 
 function processData(weatherData) {
-  // grab all the data i want to display on the page
   const myData = {
     condition: weatherData.current.condition.text,
     feelsLike: {
@@ -64,6 +63,23 @@ function displayData(newData) {
   document.querySelector(
     '.feels-like',
   ).textContent = `FEELS LIKE: ${newData.feelsLike.f}`;
+
+  document.querySelector('#farhenite').addEventListener("mouseover", function() {
+    document.querySelector('.degrees').textContent = `${newData.currentTemp.f}`;
+    document.querySelector(
+      '.feels-like',
+    ).textContent = `FEELS LIKE: ${newData.feelsLike.f} `;
+     console.log("happy")
+  })
+
+  document.querySelector('#celcius').addEventListener("mouseover", function() {
+    document.querySelector('.degrees').textContent = `${newData.currentTemp.c}  `;
+    document.querySelector(
+      '.feels-like',
+    ).textContent = `FEELS LIKE: ${newData.feelsLike.c} `;
+  })
+
+  
   document.querySelector('.wind-mph').textContent = `WIND: ${newData.wind} MPH`;
   document.querySelector(
     '.humidity',
@@ -100,3 +116,4 @@ function handleSubmit(e) {
 }
 form.addEventListener('submit', handleSubmit);
 submitBtn.addEventListener('click', handleSubmit);
+
