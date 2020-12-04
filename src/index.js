@@ -64,22 +64,21 @@ function displayData(newData) {
     '.feels-like',
   ).textContent = `FEELS LIKE: ${newData.feelsLike.f}`;
 
-  document.querySelector('#farhenite').addEventListener("mouseover", function() {
+  document.querySelector('#farhenite').addEventListener('mouseover', () => {
     document.querySelector('.degrees').textContent = `${newData.currentTemp.f}`;
     document.querySelector(
       '.feels-like',
     ).textContent = `FEELS LIKE: ${newData.feelsLike.f} `;
-     console.log("happy")
-  })
+  });
 
-  document.querySelector('#celcius').addEventListener("mouseover", function() {
+  document.querySelector('#celcius').addEventListener('mouseover', () => {
     document.querySelector('.degrees').textContent = `${newData.currentTemp.c}  `;
     document.querySelector(
       '.feels-like',
     ).textContent = `FEELS LIKE: ${newData.feelsLike.c} `;
-  })
+  });
 
-  
+
   document.querySelector('.wind-mph').textContent = `WIND: ${newData.wind} MPH`;
   document.querySelector(
     '.humidity',
@@ -116,4 +115,3 @@ function handleSubmit(e) {
 }
 form.addEventListener('submit', handleSubmit);
 submitBtn.addEventListener('click', handleSubmit);
-
